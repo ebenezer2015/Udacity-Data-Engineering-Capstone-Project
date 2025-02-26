@@ -33,7 +33,7 @@ The project follows the following steps:
 ## Data Model
 Using the mentioned datasets, we have mapped out a conceptual data model concerning immigration data and its different dimensions as follows:
 
-![conceptual data model](conceptual_data_model.png "Conceptual Data Model")
+![data model](data_model.png "Data Model")
 
 The data model here represents immigration instances with regard to airport data, demographic data, temperature data, and others. The model is designed as a **Star schema** in the data warehouse, where the desired immigration facts and info are in the fact table, and other perspective information and features that include an object in the fact table are dimension tables.
 
