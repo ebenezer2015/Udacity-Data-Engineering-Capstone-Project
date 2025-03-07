@@ -17,7 +17,7 @@ The goal is to create ETL pipelines that extract each dataset from the provided 
 
 ## Project Datasets
 Udacity has provided the following Datasets for this project:
-- **I94 Immigration Data:** This data comes from the US National Tourism and Trade Office. [This](https://travel.trade.gov/research/reports/i94/historical/2016.html) is where the data comes from. There's a sample file so you can take a look at the data in csv format before reading it all in.
+- **I94 Immigration Data:** This dataset is from the US National Tourism and Trade Office. [This](https://travel.trade.gov/research/reports/i94/historical/2016.html) is where the data comes from. There's a sample file so you can take a look at the data in csv format before reading it all in.
 - **World Temperature Data:** This dataset came from Kaggle. You can read more about it [here](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data).
 - **U.S. City Demographic Data:** This data comes from OpenSoft. You can read more about it [here](https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/).
 - **Airport Code Table:** This is a simple table of airport codes and corresponding cities. It comes from [here](https://datahub.io/core/airport-codes#data).
@@ -60,7 +60,7 @@ The project structure is shown as the following:
 - `utils.py`: contains different functions for utilization.
 - `I94_SAS_Labels_Descriptions.SAS`: immigration data label mapping.
 - `data_dictionary.md`: data dictionary for the proposed data model.
-- `conceptual_data_model.png`: diagram of the conceptual data model.
+- `data_model.png`: diagram of the conceptual data model.
 - `data`: folder contains some of the project datasets.
 - `README.md`: provides discussion about the project.
 
