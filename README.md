@@ -33,8 +33,6 @@ The project follows the following steps:
 ## Data Model
 Using the mentioned datasets, we have mapped out a conceptual data model concerning immigration data and its different dimensions as follows:
 
-![data model](data_model.png "Data Model")
-
 The data model here represents immigration instances with regard to airport data, demographic data, temperature data, and others. The model is designed as a **Star schema** in the data warehouse, where the desired immigration facts and info are in the fact table, and other perspective information and features that include an object in the fact table are dimension tables.
 
 The star schema is suitable for the analytics purposes of immigration study, since it connects relevant information within a proper number of aggregations and links (fewer joins), and decreases the records duplication at an adequate level with respect to schema complexity.
@@ -43,14 +41,11 @@ The star schema is suitable for the analytics purposes of immigration study, sin
 - Immigration table
 
 **Dimension tables:**
-1. Migrant
-1. Status
-1. Visa
-1. Demographics
+1. Time
+1. airports
+1. city_demographics
+1. temperatures
 1. Airport
-1. Country Temperature
-1. Date
-
 
 ## Project Structure
 The project structure is shown as the following:
@@ -77,14 +72,8 @@ ETL performs following steps to ingest, clean and save the data:
 - Perform data quality checks by checking that each table/dataframe has data inside it.
 - Save dataframes in Parquet format.
 
-## Usage
-To work on this project, you need first to install Python in your machine. Then, install the following dependencies:
-- [Spark](https://spark.apache.org/)
-- [Pandas](https://pandas.pydata.org/)
-- [Matplotlib](https://matplotlib.org/)
+
   
-You can use also:
-- [Airflow](https://airflow.apache.org/)
-- [AWS Services](https://aws.amazon.com/)
+
 
 
